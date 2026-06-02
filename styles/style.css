@@ -1,0 +1,53 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  /* font */
+  --font-mont: "Montserrat", sans-serif;
+  --font-sans: "Poppins", sans-serif;
+
+    /* theme */
+  --color-primary: #b88e2f;
+  --color-secondary: #faf3ea;
+  --color-secondary-muted: #f4f5f7;
+  /* text color */
+  --color-foreground: #000;
+  --color-foreground-muted: #898989;
+  --color-muted: #9f9f9f;
+
+  --color-danger: #e97171;
+  --color-success: #2ec1ac;
+}
+
+@layer components {
+  .hero-container {
+    @apply w-full h-100  md:h-150  lg:h-dvh relative bg-[url(/images/banner.svg)] flex items-center pe-[58px];
+  }
+
+  .hero-card {
+    @apply py-[20px] px-[10px]  md:py-[50px]  md:px-[30px] lg:py-[62px]  lg:xl:w-[643px] lg:px-10 bg-[#FFF3E3] lg:rounded-[10px] ms-auto;
+  }
+  .hero-label {
+    @apply text-primary mt-1 font-bold md:text-[30px] lg:text-[52px];
+  }
+  .hero-desc {
+    @apply mt-4 font-medium;
+  }
+  .hero-btn {
+    @apply bg-primary mt-3 md:mt-[30px] lg:mt-[46px] text-white px-4 py-1.5 md:py-[15px] lg:py-[25px] md:p-[50px] lg:px-[72px] uppercase lg:font-bold;
+  }
+  .browse-card{
+  @apply grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 max-w-6xl mx-auto px-4;
+  }
+
+  .browse-item{
+  @apply w-full h-[250px] md:h-[320px] lg:h-[480px] overflow-hidden rounded-lg;
+  }
+
+  .browse-img{
+  @apply w-full h-[250px] md:h-[320px] lg:h-[480px] object-cover ease-in-out hover:scale-120;
+  }  
+}

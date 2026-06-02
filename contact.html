@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
+    <link href="./styles/global.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="text-sans">    
+    <!-- navigation -->   
+    <nav>
+      <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    
+        <div class="flex items-center gap-2">
+          <img src="images/logo.svg" alt="logo" class="w-[50px] h-[32px]">
+          <h1 class="font-mont text-2xl font-bold">Furnior</h1>
+        </div>
+    
+        <div class="hidden md:flex items-center gap-8 lg:gap-12 text-gray-700 font-semibold">      
+          <a href="home.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- icons -->
+        <div class="flex items-center gap-3 md:gap-6 lg:gap-10 text-lg ">
+          <a href="#"><i class="fa-regular fa-circle-user text-xl"></i></a>
+          <a href="#"></a><i class="fa-solid fa-magnifying-glass text-xl"></i></a>
+          <a href="#"></a><i class="fa-regular fa-heart text-xl"></i></a>
+          <a href="#" id="cart-btn"><i class="fa-solid fa-cart-shopping text-xl"></i></a>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- hero contact -->
+    <section>
+      <div class="relative">
+        <img src="./images/image4.jpg" alt="shop" class="w-full h-[316px] object-cover">
+        <div class="flex flex-col items-center justify-center space-y-3  absolute inset-0 bg-white/60">
+          <img src="images/logo.svg" alt="logo" class="w-[50px] h-[32px]">
+          <h1 class="text-3xl font-semibold">Contact</h1>
+          <div class="flex gap-3 text-lg ">
+            <a href="home.html" class="font-semibold">Home</a>
+            <span class="text-2xl font-semibol">></span>
+            <a href="contact.html" class="text-foreground-muted">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sidebar section-->
+    <section>
+      <div>
+        <aside id="sidebar" class="w-[417px] h-[80vh] bg-white  flex flex-col
+              fixed right-0 top-0 translate-x-full border border-slate-200 shadow-xl" >
+        
+            <div class="px-6 py-5 border-b border-slate-300 flex justify-between">
+              <h1 class="font-semibold text-2xl">Shopping Cart</h1>
+              <button id="close-btn">
+                <img src="./images/Group.svg" alt="cart">
+              </button>
+            </div>
+        <!-- sidebar's navigation -->
+        <nav class="flex-1 px-4 py-4 space-y-1 ">            
+        </nav>
+
+        <!-- sidebar's Footer -->
+            <div class="px-8 py-4 border-t border-slate-300 text-xs flex gap-3 ">
+               <button class="border px-[30px] py-[6px] rounded-[50px]">Cart</button>
+               <button class="border px-[30px] py-[6px] rounded-[50px]">Checkout</button>
+               <button class="border px-[30px] py-[6px] rounded-[50px]">Comparison</button>
+            </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- contact section -->
+      <section>
+        <div class="pt-10 text-center">
+            <h1 class="text-2xl font-semibold pb-3">Get In Touch With Us</h1>
+            <p class="text-foreground-muted">For More Information About Our Product & Services. Please Feel Free To Drop Us <br> An Email. Our Staff Always Be There To Help You Out. Do Not Hesitate!</p>
+        </div>
+
+        <div class="grid grid-cols-2 mx-75 mt-20">
+          <!-- left -->
+          <div class="space-y-10">
+            <div class="flex gap-5">
+              <i class="fa-solid fa-location-dot text-2xl "></i>
+              <div>
+                <h1 class="text-xl font-medium">Address</h1>
+                <p>236 5th SE Avenue, New <br> York NY10000, United <br> States</p>
+              </div>
+            </div>
+
+            <div class="flex gap-5">
+              <i class="fa-solid fa-phone text-2xl"></i>                
+              <div>
+                <h1 class="text-xl font-medium">Phone</h1>
+                <p>Mobile: + (84) 546-6789 <br> Hotline: + (84) 456-6789</p>
+              </div>
+            </div>
+
+            <div class="flex gap-5">
+              <i class="fa-solid fa-clock text-2xl"></i>                
+              <div>
+                <h1 class="text-xl font-medium">Working Time</h1>
+                <p class="text-base">Monday-Firday:9:00 - 22:00 <br>Saturday-Sunday:9:00 - 21:00</p>
+              </div>
+            </div>
+          </div>
+          <!-- right -->
+          <div>
+            <form class="flex flex-col gap-7">
+              <div>
+                <label for="name" class="block mb-3">Your name</label>
+                <input  type="text" class="w-full border border-foreground-muted rounded-[10px] p-3" placeholder="Abc" required>
+              </div>
+
+              <div>
+                <label for="email" class="block mb-3">Email address</label>
+                <input type="text" class="w-full border border-foreground-muted rounded-[10px] p-3" placeholder="Abc@def.com" required>
+              </div>
+
+              <div>
+                <label for="subject" class="block mb-3">Subject</label>
+                <input type="text" class="w-full border  border-foreground-muted rounded-[10px] p-3" placeholder="This is an optional" required>
+              </div>
+
+              <div>
+                <label for="mess" class="block mb-3">Message</label>
+                <textarea rows="5" class="w-full border border-foreground-muted rounded-[10px] p-3" placeholder="Hi! I'd like to ask about" required></textarea>
+              </div>                
+                <button class="bg-primary mt-3 text-white rounded-[10px] w-[237px] h-[55px]">Submit</button>                      
+            </form>                
+          </div>
+        </div>
+      </section>    
+
+    <!-- features section -->
+     <section >      
+      <div class="flex justify-between items-center px-15 bg-[#FAF3EA] w-full h-[270px] mt-10">
+        <div class="flex flex-row gap-4">
+          <img src="./images/Vector.svg" alt="" class="w-[60px] h-[65px]">
+          <div>
+            <h1 class="text-2xl font-medium">High Quality</h1>
+            <p class="text-foreground-muted">crafted from top materals</p>
+          </div>
+        </div>
+
+        <div class="flex flex-row gap-4">
+          <img src="./images/trophy 1.svg" alt="" class="w-[60px] h-[65px]">
+          <div>
+            <h1 class="text-2xl font-medium">Warranty Protection</h1>
+            <p class="text-foreground-muted">Over 2 years</p>
+          </div>
+        </div>
+
+        <div class="flex flex-row gap-4">
+          <img src="./images/shipping.svg" alt="" class="w-[60px] h-[65px]">
+          <div>
+            <h1 class="text-2xl font-medium">Free Shipping</h1>
+            <p class="text-foreground-muted">crafted from top materals</p>
+          </div>
+        </div>
+
+        <div class="flex flex-row gap-4 ">            
+          <img src="./images/customer-support.svg" alt="" class="w-[60px] h-[65px]">     
+          <div>
+            <h1 class="text-2xl font-medium">24 / 7 Support</h1>
+            <p class="text-foreground-muted">Dedicated support</p>
+          </div>
+        </div>
+      </div>      
+    </section>
+
+    <!-- footer section -->
+    <section>
+      <div class="px-10 md:px-10 lg:px-25 py-10 border-t border-slate-300 ">
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-4 lg:grid-cols-4  mb-10">
+      
+            <div class="space-y-4 md:space-y-5 lg:space-y-9 font-semibold">
+              <h1 class="lg:font-bold lg:text-xl">Funiro.</h1>
+              <p class="text-foreground-muted">
+              400 University Drive Suite 200 Coral <br> Gables, <br>FL 33134 USA
+              </p>      
+            </div>
+
+            <div class="space-y-4 md:space-y-5 lg:space-y-9 font-semibold">
+              <h2 class="font-semibold text-foreground-muted">Links</h2>
+              <p >Home</p>
+              <p>Shop</p>
+              <p>About</p>
+              <p>Contact</p>
+            </div>
+
+            <div class="space-y-4 md:space-y-5 lg:space-y-9 font-semibold">
+              <h2 class="font-semibold text-foreground-muted">Help</h2>
+              <p>Payment Options</p>
+              <p>Returns</p>
+              <p>Privacy Policies</p>
+            </div>
+
+            <div class="space-y-4 md:space-y-5 lg:space-y-9 lg:pr-14">
+              <h2 class="font-semibold text-foreground-muted">Newsletter</h2>
+              <div class="lg:flex  gap-5">
+                <input type="email" placeholder="Enter Your Email Address" class="border-b-2 focus:outline-none"/>
+                <button class="border-b-2 lg:font-medium md:pl-2">SUBSCRIBE</button>
+              </div>
+            </div>
+          </div><hr class="border-slate-300">
+      </div>
+
+      <div class="px-10 md:px-10 lg:px-25 mb-10">
+        <h2>2023 Funiro. All rights reserved</h2>
+      </div>
+    </section>
+    <!-- scripts -->
+    <script  type="module">
+      import { getProducts } from "./services/products.js";
+
+      const products = await getProducts();
+
+      console.log(products);
+    </script>
+  </body>
+</html>

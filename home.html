@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
+    <link href="./styles/global.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="text-sans">
+    <!-- navigation -->   
+    <nav>
+      <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    
+        <div class="flex items-center gap-2">
+          <img src="images/logo.svg" alt="logo" class="w-[50px] h-[32px]">
+          <h1 class="font-mont text-2xl font-bold">Furnior</h1>
+        </div>
+    
+        <div class="hidden md:flex items-center gap-8 lg:gap-12 text-gray-700 font-semibold">      
+          <a href="home.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- icons -->
+        <div class="flex items-center gap-3 md:gap-6 lg:gap-10 text-lg ">
+          <a href="#"><i class="fa-regular fa-circle-user text-xl"></i></a>
+          <a href="#"></a><i class="fa-solid fa-magnifying-glass text-xl"></i></a>
+          <a href="#"></a><i class="fa-regular fa-heart text-xl"></i></a>
+          <a href="#" id="cart-btn"><i class="fa-solid fa-cart-shopping text-xl"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="hero-container">
+      <div class="hero-card">
+        <p>New Arrival</p>
+        <h1 class="hero-label">Discover Our  New Collection</h1>
+        <p class="hero-desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut <br />elit
+          tellus, luctus nec ullamcorper mattis.
+        </p>
+
+        <a href="./shop.html">
+          <button class="hero-btn">Buy Now</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- sidebar section-->
+    <section>
+      <div>
+        <aside id="sidebar" class="w-[417px] h-[80vh] bg-white  flex flex-col
+              fixed right-0 top-0 translate-x-full border border-slate-200 shadow-xl" >
+        
+            <div class="px-6 py-5 border-b border-slate-300 flex justify-between">
+              <h1 class="font-semibold text-2xl">Shopping Cart</h1>
+              <button id="close-btn">
+                <img src="./images/Group.svg" alt="cart">
+              </button>
+            </div>
+        <!-- sidebar's navigation -->
+        <nav class="flex-1 px-4 py-4 space-y-1 ">            
+        </nav>
+
+        <!-- sidebar's Footer -->
+            <div class="px-8 py-4 border-t border-slate-300 text-xs flex gap-3 ">
+               <button class="border px-[30px] py-[6px] rounded-[50px]">Cart</button>
+               <button class="border px-[30px] py-[6px] rounded-[50px]">Checkout</button>
+               <button class="border px-[30px] py-[6px] rounded-[50px]">Comparison</button>
+            </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- browse section -->
+    <section>
+      <div class="text-center p-10">
+        <h1 class="text-xl md:text-2xl lg:text-2xl font-bold ">Browse The Range</h1>
+        <p class="text-sm md:text-lg lg:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+
+      <div class="browse-card">
+        <div class="browse-item">
+          <img src="./images/image1.svg" alt="dining" class="browse-img">
+          <h3 class="text-center  font-semibold text-xl">Dining</h3>
+        </div>
+
+        <div class="browse-item"> 
+          <img src="./images/image2.svg" alt="living" class="browse-img">
+          <h3 class="text-center font-semibold text-xl">Living</h3>
+        </div>
+
+        <div class="browse-item">
+          <img src="./images/image3.svg" alt="bedroom" class="browse-img">
+          <h3 class="text-center font-semibold text-xl">Bedroom</h3>
+        </div> 
+      </div>
+    </section>
+
+    <!-- product section -->
+    <section>
+      <div class="text-center pt-10">
+        <h1 class="font-sans md:text-2xl lg:text-3xl font-bold ">Our Products</h1>
+        <div id="product-card" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 p-10 md:mx-10 lg:mx-15 "></div>
+      </div>
+
+      <div class="flex justify-center items-center ">
+        <button id="btn" class="border border-primary  lg:w-[245px]  lg:h-[48px] md:px-4 py-2 text-primary font-semibold text-xl">Show More</button>
+      </div>      
+    </section>
+
+    <!-- footer section -->
+    <section>
+      <div class="px-10 md:px-10 lg:px-25 py-10 mt-10 border-t border-slate-300 ">
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-4 lg:grid-cols-4  mb-10">
+      
+            <div class="space-y-4 md:space-y-5 lg:space-y-9 font-semibold">
+              <h1 class="lg:font-bold lg:text-xl">Funiro.</h1>
+              <p class="text-foreground-muted">
+              400 University Drive Suite 200 Coral <br> Gables, <br>FL 33134 USA
+              </p>      
+            </div>
+
+            <div class="space-y-4 md:space-y-5 lg:space-y-9 font-semibold">
+              <h2 class="font-semibold text-foreground-muted">Links</h2>
+              <p >Home</p>
+              <p>Shop</p>
+              <p>About</p>
+              <p>Contact</p>
+            </div>
+
+            <div class="space-y-4 md:space-y-5 lg:space-y-9 font-semibold">
+              <h2 class="font-semibold text-foreground-muted">Help</h2>
+              <p>Payment Options</p>
+              <p>Returns</p>
+              <p>Privacy Policies</p>
+            </div>
+
+            <div class="space-y-4 md:space-y-5 lg:space-y-9 lg:pr-14">
+              <h2 class="font-semibold text-foreground-muted">Newsletter</h2>
+              <div class="lg:flex  gap-5">
+                <input type="email" placeholder="Enter Your Email Address" class="border-b-2 focus:outline-none"/>
+                <button class="border-b-2 lg:font-medium md:pl-2">SUBSCRIBE</button>
+              </div>
+            </div>
+
+          </div><hr class="border-slate-300">
+      </div>
+
+      <div class="px-10 md:px-10 lg:px-25 mb-10">
+        <h2>2023 Funiro. All rights reserved</h2>
+    </div>
+    </section>
+
+    <!-- scripts -->
+    <script  type="module">
+      import { getProducts } from "./services/products.js";
+
+      const products = await getProducts();
+
+      console.log(products);
+    </script>    
+  </body>
+</html>
