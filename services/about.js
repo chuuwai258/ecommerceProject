@@ -5,12 +5,12 @@ async function getProduct(){
     const data=await response.json()
 
     customerReview.innerHTML=`
-    <div class="grid grid-cols-2 p-8">
+    <div class="grid md:gird-cols-1 lg:grid-cols-2 p-8">
       <div>
-        <img src="${data.image}" class="h-[480px] w-[550px] object-contain bg-[#F9F1E7] rounded-[10px] p-8 ml-25">
+        <img src="${data.image}" class="md:mb-5 md:h-[430px] lg:h-[480px] md:w-[500px] lg:w-[550px] object-contain bg-[#F9F1E7] rounded-[10px] p-8 ml-25">
       </div>
 
-      <div class="mr-10 space-y-2">
+      <div class="mr-10 space-y-2 md:px-10">
         <h1 class="text-3xl font-semibold">${data.title}</h1>
         <p class="text-foreground-muted text-2xl">$${data.price}</p>
 
@@ -55,7 +55,7 @@ async function getProduct(){
           <button class="px-6 py-2 border rounded-[10px]"> + Compare</button>          
         </div>
 
-        <div class="flex gap-5  border-t border-slate-300 pt-10">
+        <div class="flex gap-5  border-t border-slate-300 md:pt-6 lg:pt-10">
           <div class="text-foreground-muted">
             <p>SKU<span class="pl-14">:</span></p>
             <p>Category<span class="pl-3">:</span></p>
