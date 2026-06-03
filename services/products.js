@@ -42,8 +42,7 @@ const cartBtn=document.querySelector("#cart-btn")
 const sideBar=document.querySelector("#sidebar")
 const closeBtn=document.querySelector("#close-btn")
 
-cartBtn.addEventListener("click",(e)=>{
-  e.preventDefault()
+cartBtn.addEventListener("click",()=>{  
   sideBar.classList.toggle("translate-x-full")
 })
 
