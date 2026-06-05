@@ -6,7 +6,7 @@ async function getProducts(){
     const data=await response.json()
     const product=data.map(item=>{
       return `
-        <a href="about.html" class="block">      
+        <a href="detail.html?id=${item.id}">     
         <div class="relative border border-slate-300 shadow-2xl p-6 rounded-[10px] overflow-hidden bg-white">
           <div class="w-full h-[170px]  lg:h-[210px] md:h-[150px] mb-6 ">
             <img src= ${item.image} class="h-[150px] w-full md:h-[150px] lg:h-[200px] md:w-full lg:w-full object-contain">
